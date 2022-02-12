@@ -1,0 +1,12 @@
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\bin\Debug\net6.0\FinancialChat.Application.deps.json
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\bin\Debug\net6.0\FinancialChat.Application.dll
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\bin\Debug\net6.0\ref\FinancialChat.Application.dll
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\bin\Debug\net6.0\FinancialChat.Application.pdb
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.csproj.AssemblyReference.cache
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.AssemblyInfoInputs.cache
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.AssemblyInfo.cs
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.csproj.CoreCompileInputs.cache
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.dll
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\ref\FinancialChat.Application.dll
+D:\jlga\Capacitaciones\Chat NetCore Angular\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.pdb

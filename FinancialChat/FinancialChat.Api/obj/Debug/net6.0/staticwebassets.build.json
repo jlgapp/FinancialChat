@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LmP86j30GmQgyOobm9prwf+XYHBmr2eTZTMd8chA10U=",
+  "Source": "FinancialChat.Api",
+  "BasePath": "_content/FinancialChat.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
