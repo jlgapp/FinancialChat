@@ -16,7 +16,7 @@ export class SecurityService {
 
   baseUrl = environment.baseUrl;
 
-  seguridadCambio = new Subject<boolean>();
+  seguridadCambio = new Subject<string>();
 
   private _user: User | undefined;
 
@@ -31,7 +31,7 @@ export class SecurityService {
     if (!tokenBrowser) return;
 
     this.token = tokenBrowser;
-    this.seguridadCambio.next(true);
+
 
     this.http.get<User>(this.baseUrl + 'usuario/').subscribe((response) => {
       //console.log('Login respuesta', response);
@@ -42,10 +42,10 @@ export class SecurityService {
         lastName: response.lastName,
         token: response.token,
         password: '',
-        username: response.username,
+        userName: response.userName,
         usuarioId: response.usuarioId,
       };
-      this.seguridadCambio.next(true);
+      this.seguridadCambio.next(response.userName);
       sessionStorage.setItem('token', response.token);
     });
   }
@@ -66,10 +66,10 @@ export class SecurityService {
           lastName: response.lastName,
           token: response.token,
           password: '',
-          username: response.username,
+          userName: response.userName,
           usuarioId: response.usuarioId,
         }
-        this.seguridadCambio.next(true);
+        this.seguridadCambio.next(response.userName);
         sessionStorage.setItem('token', response.token);
         this.router.navigate(['/financialChat']);
       },
@@ -91,10 +91,11 @@ export class SecurityService {
           lastName: response.lastName,
           token: response.token,
           password: '',
-          username: response.username,
+          userName: response.userName,
           usuarioId: response.usuarioId,
-        }, (console.error())
-        this.seguridadCambio.next(true);
+        },
+        console.log(response.userName);
+        this.seguridadCambio.next(response.userName);
         sessionStorage.setItem('token', response.token);
         this.router.navigate(['/financialChat']);
       },
@@ -105,7 +106,7 @@ export class SecurityService {
   }
   closeSesion() {
     this._user = undefined;
-    this.seguridadCambio.next(false);
+    this.seguridadCambio.next("");
     sessionStorage.removeItem('token');
     this.router.navigate(['/login']);
   }

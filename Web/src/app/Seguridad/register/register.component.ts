@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
       password:form.value.password,
       lastName:form.value.lastName,
       firstName:form.value.firstName,
-      username:form.value.userName,
+      userName:form.value.userName,
       usuarioId:'',
       token:''
     });

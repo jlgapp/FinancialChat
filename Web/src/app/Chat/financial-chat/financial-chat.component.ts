@@ -1,4 +1,5 @@
 import { Component, NgZone, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Message } from 'src/app/models/message';
 import { ChatService } from 'src/app/services/chat.service';
 import { SecurityService } from 'src/app/services/Security/security.service';
@@ -15,6 +16,9 @@ export class FinancialChatComponent implements OnInit {
   uniqueID: string = new Date().getTime().toString();
   messages = new Array<Message>();
   message = new Message();
+  userName!: string;
+
+//  userSubscription: Subscription | undefined;
 
   constructor(
     private chatService: ChatService,
@@ -24,13 +28,14 @@ export class FinancialChatComponent implements OnInit {
     this.subscribeToEvents();
   }
   sendMessage(): void {
+    //console.log('subs',this.userSubscription);
     if (this.txtMessage) {
       this.message = new Message();
       this.message.clientUniqueId = this.uniqueID;
       this.message.type = "sent";
-      this.message.messageIncome = this.txtMessage;
+      this.message.messageIncome = this.securityService.obtenerUsuario().userName + ' Says : ' + this.txtMessage;
       this.message.date = new Date();
-      this.message.user = 'Pepe'
+      this.message.user = this.userName
       this.messages.push(this.message);
       this.chatService.sendMessage(this.message);
       this.txtMessage = '';
@@ -57,6 +62,13 @@ export class FinancialChatComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    /*this.userSubscription = this.securityService.seguridadCambio.subscribe(
+      (status) => {
+        this.userName = status;
+        this.message.user = status;
+        console.log('status user', this.userName);
+      }
+    );*/
   }
   closeSession(){
     this.securityService.closeSesion();
