@@ -11,14 +11,16 @@ export class ChatService {
 
   private connectionIsEstablished = false;
   private _hubConnection!: HubConnection;
+  public connectionId : string = '';
+
   constructor() {
     this.createConnection();
     this.registerOnServerEvents();
     this.startConnection();
   }
 
-  sendMessage(message: Message, user: string) {
-    this._hubConnection.invoke('NewMessage', message, user);
+  sendMessage(message: Message) {
+    this._hubConnection.invoke('NewMessage', message, this.connectionId);
   }
 
   private createConnection() {
@@ -34,7 +36,7 @@ export class ChatService {
         this.connectionIsEstablished = true;
         console.log('Hub connection started');
         this.connectionEstablished.emit(true);
-      })
+      }).then(() => this.getConnectionId())
       .catch(err => {
         console.log('Error while establishing connection, retrying...', err);
         setTimeout( () => { this.startConnection(); }, 5000);
@@ -43,8 +45,16 @@ export class ChatService {
 
   private registerOnServerEvents(): void {
     this._hubConnection.on('MessageReceived', (data: any) => {
-      //console.log('return',data);
+      console.log('return',data);
       this.messageReceived.emit(data);
     });
   }
+
+  public getConnectionId = () => {
+    this._hubConnection.invoke('GetConnectionId').then(
+      (data) => {
+        //console.log(data);
+          this.connectionId = data;
+        }
+    );}
 }

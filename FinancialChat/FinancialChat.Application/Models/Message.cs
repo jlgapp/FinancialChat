@@ -12,5 +12,6 @@ namespace FinancialChat.Application.Models
         public string Type { get; set; } = string.Empty;
         public string MessageIncome { get; set; } = string.Empty;
         public DateTime? Date { get; set; }
+        public string User { get; set; } = string.Empty;
     }
 }

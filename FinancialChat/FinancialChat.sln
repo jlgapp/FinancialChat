@@ -15,15 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DE510EAB-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{E7721368-665B-465F-9117-3549880C7C8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChat.Application", "FinancialChat.Application\FinancialChat.Application.csproj", "{3BBD54EC-2E7E-4F4C-A978-F3B215E76C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialChat.Application", "FinancialChat.Application\FinancialChat.Application.csproj", "{3BBD54EC-2E7E-4F4C-A978-F3B215E76C96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChat.Domain", "FinancialChat.Domain\FinancialChat.Domain.csproj", "{DFA1AFC9-6F3C-407F-BBB2-C62768B3F43A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialChat.Domain", "FinancialChat.Domain\FinancialChat.Domain.csproj", "{DFA1AFC9-6F3C-407F-BBB2-C62768B3F43A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChat.Identity", "FinancialChat.Identity\FinancialChat.Identity.csproj", "{20655167-D63C-49E7-920A-43E244FD2EA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialChat.Identity", "FinancialChat.Identity\FinancialChat.Identity.csproj", "{20655167-D63C-49E7-920A-43E244FD2EA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChat.Infrastructure", "FinancialChat.Infrastructure\FinancialChat.Infrastructure.csproj", "{858400F5-8A9B-48F0-92B8-ED95B50C4E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialChat.Infrastructure", "FinancialChat.Infrastructure\FinancialChat.Infrastructure.csproj", "{858400F5-8A9B-48F0-92B8-ED95B50C4E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChat.Api", "FinancialChat.Api\FinancialChat.Api.csproj", "{B00E5EB0-D9C1-4CC6-9AEF-E37D43AF7EDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialChat.Api", "FinancialChat.Api\FinancialChat.Api.csproj", "{B00E5EB0-D9C1-4CC6-9AEF-E37D43AF7EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChatBot.Api", "FinancialChatBot.Api\FinancialChatBot.Api.csproj", "{4BC079B0-2712-447C-87F8-78471143492D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{B00E5EB0-D9C1-4CC6-9AEF-E37D43AF7EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B00E5EB0-D9C1-4CC6-9AEF-E37D43AF7EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B00E5EB0-D9C1-4CC6-9AEF-E37D43AF7EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC079B0-2712-447C-87F8-78471143492D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC079B0-2712-447C-87F8-78471143492D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC079B0-2712-447C-87F8-78471143492D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC079B0-2712-447C-87F8-78471143492D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{20655167-D63C-49E7-920A-43E244FD2EA6} = {E7721368-665B-465F-9117-3549880C7C8B}
 		{858400F5-8A9B-48F0-92B8-ED95B50C4E2C} = {E7721368-665B-465F-9117-3549880C7C8B}
 		{B00E5EB0-D9C1-4CC6-9AEF-E37D43AF7EDC} = {D3E45641-434E-4384-9460-AA4669FBE65F}
+		{4BC079B0-2712-447C-87F8-78471143492D} = {D3E45641-434E-4384-9460-AA4669FBE65F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CA73262-B64B-49C9-8B1A-8D996457103A}

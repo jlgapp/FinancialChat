@@ -1,0 +1,17 @@
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Identity.deps.json
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Identity.runtimeconfig.json
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Identity.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\ref\FinancialChat.Identity.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Identity.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Application.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Application.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.csproj.AssemblyReference.cache
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.AssemblyInfoInputs.cache
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.AssemblyInfo.cs
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.csproj.CoreCompileInputs.cache
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.csproj.CopyComplete
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\ref\FinancialChat.Identity.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.genruntimeconfig.cache

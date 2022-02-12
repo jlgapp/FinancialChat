@@ -9,27 +9,24 @@ import { Message } from './models/message';
 })
 export class AppComponent {
   title = 'ClientApp';
-  txtMessage: string = '';
-  uniqueID: string = new Date().getTime().toString();
-  messages = new Array<Message>();
-  message = new Message();
 
   constructor(
-    private chatService: ChatService,
-    private _ngZone: NgZone
+
   ) {
-    this.subscribeToEvents();
+    //this.subscribeToEvents();
   }
-  sendMessage(): void {
+  /*sendMessage(): void {
     if (this.txtMessage) {
       this.message = new Message();
       this.message.clientUniqueId = this.uniqueID;
       this.message.type = "sent";
       this.message.messageIncome = this.txtMessage;
       this.message.date = new Date();
+      this.message.user = 'Pepe'
       this.messages.push(this.message);
-      this.chatService.sendMessage(this.message, 'Pepe');
+      this.chatService.sendMessage(this.message);
       this.txtMessage = '';
+
     }
   }
   private subscribeToEvents(): void {
@@ -41,7 +38,13 @@ export class AppComponent {
           this.messages.push(message);
           //console.log('received', message);
         }
+        if (message.clientUniqueId === this.uniqueID && message.type === "BotResponse") {
+          message.type = "received";
+          this.messages.push(message);
+          //console.log('received', message);
+        }
+
       });
     });
-  }
+  }*/
 }

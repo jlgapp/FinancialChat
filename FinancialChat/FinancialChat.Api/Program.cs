@@ -1,5 +1,6 @@
 using FinancialChat.Api.Middleware;
 using FinancialChat.Application;
+using FinancialChat.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAplicationServices();
+builder.Services.ConfigureIdentityServices(builder.Configuration);
 
 builder.Services.AddCors(options => {
     options.AddPolicy("CorsPolicy", builder => builder

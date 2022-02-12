@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WenGtARd9lYyDZsAjHP0OLx6eX3FgdyKCFcWQGfdQDY=",
+  "Source": "FinancialChatBot.Api",
+  "BasePath": "_content/FinancialChatBot.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

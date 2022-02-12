@@ -3,9 +3,9 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FinancialChat.Api.Controllers
+namespace FinancialChatBot.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class BotStockController : ControllerBase
     {
@@ -19,8 +19,8 @@ namespace FinancialChat.Api.Controllers
         public async Task<ActionResult> GetQuote(string stock)
         {
             var query = new GetBotStockQuoteQuery(stock);
-            var videos = await _mediator.Send(query);
-            return Ok(videos);
+            var stockResponse = await _mediator.Send(query);
+            return Ok(stockResponse);
         }
     }
 }

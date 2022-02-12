@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlChat:"https://localhost:7083/"
+  baseUrl:"http://localhost:5080/api/"
 };
 
 /*
