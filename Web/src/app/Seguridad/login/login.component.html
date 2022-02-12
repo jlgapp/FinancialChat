@@ -1,6 +1,8 @@
 
 <section fxLayoutAlign="center">
+
   <mat-card>
+    <h1>Login Financial Chat JobSity</h1>
     <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px"
     #f="ngForm"
     (ngSubmit)="loginUsuario(f)">
@@ -14,7 +16,8 @@
         <input type="password" matInput placeholder="Password" name="password" ngModel required />
         <mat-error>Debe ingresar un password</mat-error>
       </mat-form-field>
-      <button mat-raised-button color="primary" type="submit">Ingresar</button>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+      <button mat-raised-button color="primary" (click)="register()">Register</button>
     </form>
   </mat-card>
 

@@ -1,1 +1,42 @@
-<p>register works!</p>
+<section>
+  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="registerUser(f)" fxLayoutGap="10px" >
+    <h1>Register Financial Chat JobSity</h1>
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input type="text" ngModel name="firstName" required placeholder="First Name" matInput autocomplete="noac"/>
+      <mat-error>Field mandatory</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Last Name</mat-label>
+      <input type="text" ngModel name="lastName" required placeholder="Last Name" matInput autocomplete="noac"/>
+      <mat-error>Field mandatory</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>User</mat-label>
+      <input type="text" ngModel name="userName" required placeholder="jgarcia" matInput autocomplete="off"/>
+      <mat-error>Debe ingresar el usuario</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input type="email" matInput placeholder="sucorreo@hotmail.com" ngModel name="email" email required
+        #emailInput="ngModel" />
+      <mat-error *ngIf="emailInput.hasError('required')">Email is mandatory</mat-error>
+      <mat-error *ngIf="!emailInput.hasError('required')">Invalid Email </mat-error>
+    </mat-form-field>
+    <mat-form-field hintLabel="Password mus have least 7 characters">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="password" ngModel name="password" required minlength="7" />
+      <mat-error>Password must have a least 7 charaters</mat-error>
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Save</button>
+  </form>
+</section>
+<!--<section id="contenedor">
+  <div id="elemento1" class="elemento"></div>
+  <div id="elemento2" class="elemento"></div>
+  <div id="elemento3" class="elemento"></div>
+</section>-->

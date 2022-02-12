@@ -50,13 +50,13 @@ export class SecurityService {
     });
   }
 
-  registrarUsuario(usr: User) {
+  registerUser(usr: User) {
 
 
     console.log('User', usr);
 
     this.http
-      .post<User>(this.baseUrl + 'usuario/registrar', usr)
+      .post<User>(this.baseUrl + 'v1/account/register', usr)
       .subscribe((response) => {
         //console.log('Login respuesta', response);
         this.token = response.token;
@@ -68,18 +68,22 @@ export class SecurityService {
           password: '',
           username: response.username,
           usuarioId: response.usuarioId,
-        };
+        }
         this.seguridadCambio.next(true);
         sessionStorage.setItem('token', response.token);
-        this.router.navigate(['/']);
-      });
+        this.router.navigate(['/financialChat']);
+      },
+      (error) => {
+        alert(error.error.Message)
+      }
+      );
   }
 
   login(loginData: LoginData) {
     this.http
       .post<User>(this.baseUrl + 'v1/account/login', loginData)
       .subscribe((response) => {
-        //console.log('Login respuesta', response);
+        console.log('Login respuesta', response);
         this.token = response.token;
         this._user = {
           email: response.email,
@@ -89,11 +93,15 @@ export class SecurityService {
           password: '',
           username: response.username,
           usuarioId: response.usuarioId,
-        };
+        }, (console.error())
         this.seguridadCambio.next(true);
         sessionStorage.setItem('token', response.token);
         this.router.navigate(['/financialChat']);
-      });
+      },
+        (error) => {
+          alert(error.error.Message)
+        }
+      );
   }
   closeSesion() {
     this._user = undefined;
@@ -102,7 +110,7 @@ export class SecurityService {
     this.router.navigate(['/login']);
   }
   obtenerUsuario() {
-    return {...this._user};
+    return { ...this._user };
   }
   onSesion() {
     return sessionStorage.getItem('token') != null;
