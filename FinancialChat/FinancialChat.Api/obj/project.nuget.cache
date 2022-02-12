@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zwcQoB8UcfEX/3d9AQnqGBV76/LUr4esovjLvwhOtzTTx5yW2Mw6JsOhv7M1hPa2WYCBbX+Glf8toDFOHa7SEA==",
+  "dgSpecHash": "oXd7xRbxMi1EGjAcLn26FiSDnPX1EoUJpCYzM6LzMH3XSXJtPGCiiNpPaT2QEHKRZn21CN/BG+K0XsdbpfxSfQ==",
   "success": true,
-  "projectFilePath": "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Api\\FinancialChat.Api.csproj",
+  "projectFilePath": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Api\\FinancialChat.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jgarcia\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\jgarcia\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",

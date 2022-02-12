@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Identity\\FinancialChat.Identity.csproj",
+      "projectUniqueName": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Identity\\FinancialChat.Identity.csproj",
       "projectName": "FinancialChat.Identity",
-      "projectPath": "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Identity\\FinancialChat.Identity.csproj",
+      "projectPath": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Identity\\FinancialChat.Identity.csproj",
       "packagesPath": "C:\\Users\\jgarcia\\.nuget\\packages\\",
-      "outputPath": "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Identity\\obj\\",
+      "outputPath": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

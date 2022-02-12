@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj": {}
+    "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj": {
+    "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj",
+        "projectUniqueName": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj",
         "projectName": "FinancialChat.Infrastructure",
-        "projectPath": "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj",
+        "projectPath": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Infrastructure\\FinancialChat.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\jgarcia\\.nuget\\packages\\",
-        "outputPath": "D:\\jlga\\Capacitaciones\\Chat NetCore Angular\\FinancialChat\\FinancialChat.Infrastructure\\obj\\",
+        "outputPath": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
