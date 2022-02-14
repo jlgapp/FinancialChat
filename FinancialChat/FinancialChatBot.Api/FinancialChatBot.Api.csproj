@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FinancialChat.Application\FinancialChat.Application.csproj" />
+    <ProjectReference Include="..\FinancialChat.Infrastructure\FinancialChat.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

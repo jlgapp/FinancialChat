@@ -17,7 +17,7 @@ namespace FinancialChat.Application.Features.ChatMessages.Queries.GetMessagesLis
         public async Task<List<UserMessage>> Handle(GetMessagesListQuery request, CancellationToken cancellationToken)
         {
             Func<IQueryable<UserMessage>, IOrderedQueryable<UserMessage>> orderingFunc =
-                query => query.OrderByDescending(date => date.CreatedDate);
+                query => query.OrderBy(date => date.CreatedDate);
             
             var messagesList = await _unitOfWork.Repository<UserMessage>()
                 .GetAsync(CheckForCriteria(request.UserName), 

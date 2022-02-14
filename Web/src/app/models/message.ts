@@ -5,3 +5,10 @@ export class Message {
   date!: Date;
   user: string = "";
 }
+
+export class UserMessage {
+  userName: string = "";
+  message: string = "";
+  type: string = "";
+  createdDate! : Date;
+}

@@ -1,15 +1,17 @@
-import { Component, NgZone, OnInit } from '@angular/core';
+import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Message } from 'src/app/models/message';
+import { Message, UserMessage } from 'src/app/models/message';
 import { ChatService } from 'src/app/services/chat.service';
 import { SecurityService } from 'src/app/services/Security/security.service';
+
+import { map, mapTo, pluck } from "rxjs/operators";
 
 @Component({
   selector: 'app-financial-chat',
   templateUrl: './financial-chat.component.html',
   styleUrls: ['./financial-chat.component.scss']
 })
-export class FinancialChatComponent implements OnInit {
+export class FinancialChatComponent implements OnInit, OnDestroy {
 
   title = 'ClientApp';
   txtMessage: string = '';
@@ -18,7 +20,12 @@ export class FinancialChatComponent implements OnInit {
   message = new Message();
   userName: string = '';
 
-//  userSubscription: Subscription | undefined;
+  userMessagesList: UserMessage[] | null = [];
+
+  //  userSubscription: Subscription | undefined;
+
+  //  userSubscription: Subscription | undefined;
+  messagesSubsription!: Subscription;
 
   constructor(
     private chatService: ChatService,
@@ -37,10 +44,23 @@ export class FinancialChatComponent implements OnInit {
       this.message.date = new Date();
       this.message.user = this.securityService.obtenerUsuario().userName
       this.messages.push(this.message);
-      this.chatService.sendMessage(this.message);
-      this.txtMessage = '';
-
+      this.chatService.sendMessage(this.message)
+        .then(() => {
+          if (!this.message.messageIncome.startsWith('/')) {
+            let userMessage = new UserMessage();
+            userMessage.message = this.txtMessage;
+            userMessage.type = "sent";
+            userMessage.userName = this.securityService.obtenerUsuario().userName;
+            this.chatService.saveMessage(userMessage);
+            this.txtMessage = '';
+          }
+        })
+        .catch(err => {
+          alert('Error :' + err);
+          this.txtMessage = '';
+        });
     }
+
   }
   private subscribeToEvents(): void {
 
@@ -50,6 +70,12 @@ export class FinancialChatComponent implements OnInit {
           message.type = "received";
           this.messages.push(message);
           //console.log('received', message);
+          let userMessage = new UserMessage();
+          userMessage.message = message.messageIncome;
+          userMessage.type = "received";
+          userMessage.userName = this.securityService.obtenerUsuario().userName;
+
+          this.chatService.saveMessage(userMessage);
         }
         if (message.clientUniqueId === this.uniqueID && message.type === "BotResponse") {
           message.type = "received";
@@ -61,6 +87,7 @@ export class FinancialChatComponent implements OnInit {
     });
   }
 
+
   ngOnInit(): void {
     /*this.userSubscription = this.securityService.seguridadCambio.subscribe(
       (status) => {
@@ -70,8 +97,23 @@ export class FinancialChatComponent implements OnInit {
       }
     );*/
     this.userName = this.securityService.obtenerUsuario().userName;
+
+    this.chatService.getMessage(this.userName);
+    this.messagesSubsription = this.chatService
+      .obtainMessagesList()
+      .subscribe((mess: any[]) => {
+        this.userMessagesList = mess;
+        this.userMessagesList.forEach(ms => {
+          var temp = new Message();
+          temp = { clientUniqueId: "", messageIncome: ms.message, type: ms.type, date: ms.createdDate, user: ms.userName };
+          this.messages.push(temp);
+        });
+      });
   }
-  closeSession(){
+  ngOnDestroy() {
+    this.messagesSubsription.unsubscribe();
+  }
+  closeSession() {
     this.securityService.closeSesion();
   }
 }

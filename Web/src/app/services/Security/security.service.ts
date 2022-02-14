@@ -46,7 +46,7 @@ export class SecurityService {
         usuarioId: response.usuarioId,
       };
       this.seguridadCambio.next(response.userName);
-      sessionStorage.setItem('token', response.token);
+      sessionStorage.setItem('userLogin', JSON.stringify(this._user));
     });
   }
 
@@ -70,12 +70,12 @@ export class SecurityService {
           usuarioId: response.usuarioId,
         }
         this.seguridadCambio.next(response.userName);
-        sessionStorage.setItem('token', response.token);
+        sessionStorage.setItem('userLogin', JSON.stringify(this._user));
         this.router.navigate(['/financialChat']);
       },
-      (error) => {
-        alert(error.error.Message)
-      }
+        (error) => {
+          alert(error.error.Message)
+        }
       );
   }
 
@@ -94,9 +94,9 @@ export class SecurityService {
           userName: response.userName,
           usuarioId: response.usuarioId,
         },
-        console.log(response.userName);
+          console.log(response.userName);
         this.seguridadCambio.next(response.userName);
-        sessionStorage.setItem('token', response.token);
+        sessionStorage.setItem('userLogin', JSON.stringify(this._user));
         this.router.navigate(['/financialChat']);
       },
         (error) => {
@@ -107,13 +107,19 @@ export class SecurityService {
   closeSesion() {
     //this._user = undefined;
     this.seguridadCambio.next("");
-    sessionStorage.removeItem('token');
+    sessionStorage.removeItem('userLogin');
     this.router.navigate(['/login']);
   }
   obtenerUsuario() {
     return { ...this._user };
   }
   onSesion() {
-    return sessionStorage.getItem('token') != null;
+    if (sessionStorage.getItem('userLogin') != null) {
+      if (this._user == null)
+        this._user = (<User>JSON.parse(<any>sessionStorage.getItem("userLogin")))
+
+      return true;
+    }
+    return false;
   }
 }

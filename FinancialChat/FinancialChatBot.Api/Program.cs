@@ -1,4 +1,8 @@
 using FinancialChat.Application;
+using FinancialChat.Application.Features.Bot.Queries.GetBotStockQuote;
+using FinancialChat.Infrastructure;
+using MediatR;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +13,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddInfraestructureServices(builder.Configuration);
 builder.Services.AddAplicationServices();
+//builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+//builder.Services.AddMediatR(typeof(GetBotStockQuoteQueryHandler));
+
 
 builder.Services.AddCors(options => {
     options.AddPolicy("CorsPolicy", builder => builder
