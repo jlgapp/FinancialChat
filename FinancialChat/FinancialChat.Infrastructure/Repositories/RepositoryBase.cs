@@ -64,7 +64,7 @@ namespace FinancialChat.Infrastructure.Repositories
 
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>>? predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
-            string? includeString = null, bool disableTracking = true)
+            string? includeString = null, bool disableTracking = true, int? takeRecords = null)
         {
             IQueryable<T> query = _context.Set<T>();
             if (disableTracking) query = query.AsNoTracking();
@@ -72,8 +72,13 @@ namespace FinancialChat.Infrastructure.Repositories
             if (!string.IsNullOrWhiteSpace(includeString)) query = query.Include(includeString);
             if (predicate != null)
                 query = query.Where(predicate);
+
+            if (takeRecords != null)
+                query = query.Take((int)takeRecords);
+
             if (orderBy != null)
                 return await orderBy(query).ToListAsync();
+           
 
             return await query.ToListAsync();
         }

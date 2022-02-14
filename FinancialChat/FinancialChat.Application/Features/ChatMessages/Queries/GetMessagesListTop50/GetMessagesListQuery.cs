@@ -9,7 +9,7 @@ namespace FinancialChat.Application.Features.ChatMessages.Queries.GetMessagesLis
 
         public GetMessagesListQuery(string userName)
         {
-            UserName = userName;
+            UserName = userName ?? throw new ArgumentNullException(nameof(userName));
         }
     }
 }

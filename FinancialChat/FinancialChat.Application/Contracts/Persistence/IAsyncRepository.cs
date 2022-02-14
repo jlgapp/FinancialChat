@@ -15,7 +15,8 @@ namespace FinancialChat.Application.Contracts.Persistence
         Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>>? predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
             string? includeString = null,
-            bool disableTracking = true);
+            bool disableTracking = true,
+            int? takeRecords = null);
 
         Task<IReadOnlyList<T>> GetAsyncObjectInclude(Expression<Func<T, bool>>? predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
