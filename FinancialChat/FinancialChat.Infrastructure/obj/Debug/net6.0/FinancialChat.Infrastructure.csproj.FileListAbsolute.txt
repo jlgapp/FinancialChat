@@ -10,3 +10,10 @@ D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\obj\Debug\n
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\obj\Debug\net6.0\FinancialChat.Infrastructure.dll
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\obj\Debug\net6.0\ref\FinancialChat.Infrastructure.dll
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\obj\Debug\net6.0\FinancialChat.Infrastructure.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\bin\Debug\net6.0\FinancialChat.Infrastructure.runtimeconfig.json
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\bin\Debug\net6.0\FinancialChat.Application.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\bin\Debug\net6.0\FinancialChat.Domain.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\bin\Debug\net6.0\FinancialChat.Application.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\bin\Debug\net6.0\FinancialChat.Domain.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\obj\Debug\net6.0\FinancialChat.Infrastructure.csproj.CopyComplete
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Infrastructure\obj\Debug\net6.0\FinancialChat.Infrastructure.genruntimeconfig.cache

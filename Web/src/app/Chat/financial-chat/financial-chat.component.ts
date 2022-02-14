@@ -16,7 +16,7 @@ export class FinancialChatComponent implements OnInit {
   uniqueID: string = new Date().getTime().toString();
   messages = new Array<Message>();
   message = new Message();
-  userName!: string;
+  userName: string = '';
 
 //  userSubscription: Subscription | undefined;
 
@@ -33,9 +33,9 @@ export class FinancialChatComponent implements OnInit {
       this.message = new Message();
       this.message.clientUniqueId = this.uniqueID;
       this.message.type = "sent";
-      this.message.messageIncome = this.securityService.obtenerUsuario().userName + ' Says : ' + this.txtMessage;
+      this.message.messageIncome = this.txtMessage;
       this.message.date = new Date();
-      this.message.user = this.userName
+      this.message.user = this.securityService.obtenerUsuario().userName
       this.messages.push(this.message);
       this.chatService.sendMessage(this.message);
       this.txtMessage = '';
@@ -69,6 +69,7 @@ export class FinancialChatComponent implements OnInit {
         console.log('status user', this.userName);
       }
     );*/
+    this.userName = this.securityService.obtenerUsuario().userName;
   }
   closeSession(){
     this.securityService.closeSesion();

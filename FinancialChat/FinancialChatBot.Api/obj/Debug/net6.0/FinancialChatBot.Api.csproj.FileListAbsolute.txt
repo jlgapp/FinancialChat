@@ -32,3 +32,5 @@ D:\jlga\Git\FinancialChat\FinancialChat\FinancialChatBot.Api\obj\Debug\net6.0\Fi
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChatBot.Api\obj\Debug\net6.0\ref\FinancialChatBot.Api.dll
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChatBot.Api\obj\Debug\net6.0\FinancialChatBot.Api.pdb
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChatBot.Api\obj\Debug\net6.0\FinancialChatBot.Api.genruntimeconfig.cache
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChatBot.Api\bin\Debug\net6.0\FinancialChat.Domain.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChatBot.Api\bin\Debug\net6.0\FinancialChat.Domain.pdb

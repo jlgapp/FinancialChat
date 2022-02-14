@@ -117,12 +117,18 @@
       },
       "FinancialChat.Application/1.0.0": {
         "dependencies": {
+          "FinancialChat.Domain": "1.0.0",
           "FluentValidation": "10.3.6",
           "FluentValidation.DependencyInjectionExtensions": "10.3.6",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1"
         },
         "runtime": {
           "FinancialChat.Application.dll": {}
+        }
+      },
+      "FinancialChat.Domain/1.0.0": {
+        "runtime": {
+          "FinancialChat.Domain.dll": {}
         }
       }
     }
@@ -218,6 +224,11 @@
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
     },
     "FinancialChat.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinancialChat.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

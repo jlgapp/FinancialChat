@@ -38,10 +38,15 @@ namespace FinancialChat.Api.Middleware
                 else msg.MessageIncome = "Sorry!, Command can't be processed!!!";
 
                 msg.Type = "BotResponse";
+                msg.MessageIncome = "JobSity Bot Says: " + msg.MessageIncome;
                 await Clients.Client(conectionId).SendAsync("MessageReceived", msg);
             }
             else
+            {
+                msg.MessageIncome = msg.User + " Says: " + msg.MessageIncome;
                 await Clients.All.SendAsync("MessageReceived", msg);
+            }
+
         }
         public static string GetItemUrl(string url)
         {

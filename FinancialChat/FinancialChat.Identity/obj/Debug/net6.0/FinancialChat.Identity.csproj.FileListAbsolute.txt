@@ -15,3 +15,5 @@ D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\ref\FinancialChat.Identity.dll
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.pdb
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\obj\Debug\net6.0\FinancialChat.Identity.genruntimeconfig.cache
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Domain.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Identity\bin\Debug\net6.0\FinancialChat.Domain.pdb

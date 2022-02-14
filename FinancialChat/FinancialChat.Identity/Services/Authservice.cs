@@ -30,7 +30,9 @@ namespace FinancialChat.Identity.Services
         {
             var user = await _userManager.FindByEmailAsync(authRequest.Email);
             if (user == null) throw new Exception($"The user with email {authRequest.Email} doesn't exists");
+
             var result = await _signInManager.PasswordSignInAsync(user.UserName, authRequest.Password, false, lockoutOnFailure: false);
+
             if (!result.Succeeded)
                 throw new Exception($"User or password are incorrect");
 
@@ -42,13 +44,14 @@ namespace FinancialChat.Identity.Services
                 UserName = user.UserName,
                 Token = new JwtSecurityTokenHandler().WriteToken(token)
             };
+
             return authResponse;
         }
 
         public async Task<RegistrationResponse> Register(RegistrationRequest registrationRequest)
         {
-            //var existingUser = await _userManager.FindByNameAsync(registrationRequest.UserName);
-            //if (existingUser != null) throw new Exception($"User already exists {registrationRequest.UserName}");
+            var existingUser = await _userManager.FindByNameAsync(registrationRequest.UserName);
+            if (existingUser != null) throw new Exception($"User already exists {registrationRequest.UserName}");
 
             var existingEmail = await _userManager.FindByEmailAsync(registrationRequest.Email);
             if (existingEmail != null) throw new Exception($" Email already exists {registrationRequest.Email}");
@@ -58,7 +61,7 @@ namespace FinancialChat.Identity.Services
                 Email = registrationRequest.Email,
                 FirstName = registrationRequest.FirstName,
                 LastName = registrationRequest.LastName,
-                UserName = registrationRequest.UserName,
+                UserName = registrationRequest.UserName.ToUpper(),
                 EmailConfirmed = true,
                 
             };

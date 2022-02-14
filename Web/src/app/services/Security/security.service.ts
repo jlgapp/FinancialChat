@@ -18,7 +18,7 @@ export class SecurityService {
 
   seguridadCambio = new Subject<string>();
 
-  private _user: User | undefined;
+  private _user!: User;
 
   constructor(private router: Router, private http: HttpClient) { }
 
@@ -105,7 +105,7 @@ export class SecurityService {
       );
   }
   closeSesion() {
-    this._user = undefined;
+    //this._user = undefined;
     this.seguridadCambio.next("");
     sessionStorage.removeItem('token');
     this.router.navigate(['/login']);

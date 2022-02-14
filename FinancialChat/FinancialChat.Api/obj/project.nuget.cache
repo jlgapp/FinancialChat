@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5uldTVa0CVagTh3OGqdmZjXzVkoNkr08rZTHFg23OWD+27fKaoPQSdTn+nrG1eX2RH7ccb8zSf16Qwlc6ehH1Q==",
+  "dgSpecHash": "/eh0J2HTXeI9HqYQojfE6Sicc0oZmeYAoo3cX6z9vTjAYr2L3smHHqOvqHbNRfYYfXUyJaasXpBVGoDFrdJnVg==",
   "success": true,
   "projectFilePath": "D:\\jlga\\Git\\FinancialChat\\FinancialChat\\FinancialChat.Api\\FinancialChat.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jgarcia\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\jgarcia\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\jgarcia\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\jgarcia\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\jgarcia\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -40,7 +42,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.signalr.protocols.json\\1.1.0\\microsoft.aspnetcore.signalr.protocols.json.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.websockets\\2.2.0\\microsoft.aspnetcore.websockets.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\jgarcia\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jgarcia\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\jgarcia\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\jgarcia\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",

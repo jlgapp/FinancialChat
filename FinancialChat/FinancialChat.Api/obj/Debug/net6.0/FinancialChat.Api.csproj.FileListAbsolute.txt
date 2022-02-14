@@ -121,3 +121,7 @@ D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\Finan
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\FinancialChat.Infrastructure.pdb
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\Humanizer.dll
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\FinancialChat.Domain.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\FinancialChat.Domain.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\AutoMapper.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

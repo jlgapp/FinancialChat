@@ -22,3 +22,6 @@ D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Application\obj\Debug\net6
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\ref\FinancialChat.Application.dll
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.pdb
 D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.csproj.AssemblyReference.cache
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Application\bin\Debug\net6.0\FinancialChat.Domain.dll
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Application\bin\Debug\net6.0\FinancialChat.Domain.pdb
+D:\jlga\Git\FinancialChat\FinancialChat\FinancialChat.Application\obj\Debug\net6.0\FinancialChat.Application.csproj.CopyComplete
