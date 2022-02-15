@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EE300652-FDE9-4F96-8E5C-4AB3B603090A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{A1849499-EDA9-42B7-9A7E-C597620DF394}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\jgarcia\Desktop\Execution.docx = C:\Users\jgarcia\Desktop\Execution.docx
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B9C4021B-BE85-4F7A-97E5-D7C95C00D4C5}"
 EndProject
