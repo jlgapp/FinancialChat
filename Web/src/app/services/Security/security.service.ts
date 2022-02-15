@@ -100,7 +100,11 @@ export class SecurityService {
         this.router.navigate(['/financialChat']);
       },
         (error) => {
+          if (error.error.Message == undefined)
+          alert('Error conecting to the server')
+          else
           alert(error.error.Message)
+
         }
       );
   }

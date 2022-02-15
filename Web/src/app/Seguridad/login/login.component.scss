@@ -6,3 +6,16 @@ mat-card {
   text-align: center;
   margin-top: 20px;
 }
+
+section {
+  display: table;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 100%;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}

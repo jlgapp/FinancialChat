@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialChat.Api", "Financ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChatBot.Api", "FinancialChatBot.Api\FinancialChatBot.Api.csproj", "{4BC079B0-2712-447C-87F8-78471143492D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChat.Application.UnitTests", "FinancialChat.Application.UnitTests\FinancialChat.Application.UnitTests.csproj", "{6ECAFF80-69D6-43A0-9A91-ED4D019147F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{4BC079B0-2712-447C-87F8-78471143492D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BC079B0-2712-447C-87F8-78471143492D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BC079B0-2712-447C-87F8-78471143492D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECAFF80-69D6-43A0-9A91-ED4D019147F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECAFF80-69D6-43A0-9A91-ED4D019147F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECAFF80-69D6-43A0-9A91-ED4D019147F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECAFF80-69D6-43A0-9A91-ED4D019147F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{858400F5-8A9B-48F0-92B8-ED95B50C4E2C} = {E7721368-665B-465F-9117-3549880C7C8B}
 		{B00E5EB0-D9C1-4CC6-9AEF-E37D43AF7EDC} = {D3E45641-434E-4384-9460-AA4669FBE65F}
 		{4BC079B0-2712-447C-87F8-78471143492D} = {D3E45641-434E-4384-9460-AA4669FBE65F}
+		{6ECAFF80-69D6-43A0-9A91-ED4D019147F1} = {B9C4021B-BE85-4F7A-97E5-D7C95C00D4C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CA73262-B64B-49C9-8B1A-8D996457103A}

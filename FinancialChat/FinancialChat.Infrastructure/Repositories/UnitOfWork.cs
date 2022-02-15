@@ -15,7 +15,7 @@ namespace FinancialChat.Infrastructure.Repositories
             _context = context;
         }
 
-        public FinancialChatDbContext StreamerDbContext => _context;
+        public FinancialChatDbContext FinancialChatDbContext => _context;
 
 
         public async Task<int> Complete()

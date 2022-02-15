@@ -10,15 +10,11 @@ namespace FinancialChat.Application.Features.Bot.Queries.GetBotStockQuote
         {
             var urlBot = $"https://stooq.com/q/l/?s={request.Stock}&f=sd2t2ohlcv&h&e=csv";
 
-            await Task.Delay(1000);
+            await Task.Delay(100);
 
-            List<string> dataStock = FilesUtilites.SplitCSV(urlBot);
-            StringBuilder sb = new StringBuilder();
-            foreach (var data in dataStock)
-            {
-                sb.Append(data);
-            }
-            return sb.ToString();
+            string dataStock = FilesUtilites.SplitCSV(urlBot);
+            
+            return dataStock;
         }
     }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { SecurityService } from 'src/app/services/Security/security.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { SecurityService } from 'src/app/services/Security/security.service';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private securityServices:SecurityService) { }
+  constructor(private securityServices:SecurityService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -24,5 +25,8 @@ export class RegisterComponent implements OnInit {
       token:''
     });
     console.log(form);
+  }
+  goToLogin(){
+    this.router.navigate(['/login']);
   }
 }
