@@ -45,7 +45,12 @@
       "ProjectGuid": "6ecaff80-69d6-43a0-9a91-ed4d019147f1",
       "DisplayName": "FinancialChat.Application.UnitTests",
       "ColorIndex": 7
+    },
+    "a1849499-eda9-42b7-9a7e-c597620df394": {
+      "ProjectGuid": "a1849499-eda9-42b7-9a7e-c597620df394",
+      "DisplayName": "doc",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 9
 }
